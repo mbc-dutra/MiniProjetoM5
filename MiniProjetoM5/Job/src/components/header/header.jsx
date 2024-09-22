@@ -1,23 +1,34 @@
 import React from 'react';
 import './header.css';
 
-const Header = () => {
-  return (
-    <header className="header">
-      <nav>
-        <img src="../assets/logo.png" alt="Logo da aplicação" className="logo" />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Planos</a></li>
-          <li><a href="#">Quem somos</a></li>
-        </ul>
-        <div className="search-bar">
-          <input type="text" placeholder="Pesquisar vaga" />
-          <button>Pesquisar</button>
-        </div>
-      </nav>
-    </header>
-  );
+const Header = ({ setFilterInput }) => {
+    const handleSearch = (event) => {
+        event.preventDefault();
+        const input = event.target.elements.filterInput.value;
+        console.log("Filtro de busca:", input); // Adicione isso para verificar
+        setFilterInput(input);
+    };
+
+    return (
+        <header className="header">
+            <nav>
+                <img src="src/assets/logo.png" alt="Logo" />
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PLANOS</a></li>
+                    <li><a href="#">QUEM SOMOS</a></li>
+                </ul>
+                <form onSubmit={handleSearch}>
+                    <input
+                        type="text"
+                        name="filterInput"
+                        placeholder="Digite Localização ou Categoria"
+                    />
+                    <button type="submit">Buscar</button>
+                </form>
+            </nav>
+        </header>
+    );
 };
 
 export default Header;

@@ -1,6 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .header {
-  background-color: #f0f5f9; /* Fundo com degradê levemente azulado */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #e6f5f7, #b7d9ff, #85f7ff, #3ea8ff); /* Fundo com degradê levemente azulado */
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
@@ -10,15 +16,16 @@ nav {
   align-items: center;
 }
 
-.logo {
-  width: 150px;
+nav img{
   height: auto;
+  width: 70px;
 }
 
 ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 100px;
+  font-family: sans-serif;
 }
 
 li {

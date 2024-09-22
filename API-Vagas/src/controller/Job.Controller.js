@@ -3,11 +3,11 @@ import { Job } from "../models/Job.Models.js";
 let listJobs = [];
 let currentId = 1;
 
-export const createJobs = (jobTitle, sendData, limitDate, wage, location, requirements, description) => {
-    const newJob = new Job(currentId++, jobTitle, sendData, limitDate, wage, location, requirements, description);
+export const createJobs = (jobTitle, sendData, limitDate, wage, location, requirements, description, category) => {
+    const newJob = new Job(currentId++, jobTitle, sendData, limitDate, wage, location, requirements, description, category);
     listJobs.push(newJob);
     return newJob;
-}
+};
 
 export const getAllJobs = () => {
     return listJobs;

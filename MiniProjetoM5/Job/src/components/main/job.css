@@ -2,6 +2,19 @@ body {
   overflow-x: hidden;
 }
 
+h1{
+  margin: 10px;
+}
+
+.background-main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    max-width:100%; /* Para garantir que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 .job-container {
   max-height: 500px; /* Altura máxima da área de visualização */
   overflow-y: auto;  /* Ativa o scroll apenas na vertical */

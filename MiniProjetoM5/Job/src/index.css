@@ -1,68 +1,144 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Reseta estilos básicos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+  background: linear-gradient(to right, #e6f5f7, #b7d9ff, #85f7ff, #3ea8ff);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: auto;
+  width: 70px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px; /* Ajustado para telas menores */
+}
+
+li {
+  font-weight: bold;
+  color: #333;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
+  color: #333;
 }
 
-body {
-  margin: 0;
+/* Estilos da barra de pesquisa */
+.search-bar {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  gap: 10px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  padding: 10px 20px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Estilos do conteúdo */
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+.background-main {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  max-width: 100%; 
+  height: auto; 
+}
+
+.job-container {
+  max-height: 500px; 
+  overflow-y: auto;  
+  padding-right: 10px; 
+}
+
+/* Estilos dos cartões de trabalho */
+.job-list {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 0;
+  list-style: none;
+}
+
+.job-card {
+  border: 1px solid #0f0f0f;
+  border-radius: 10px;
+  padding: 20px; /* Ajustado para maior área de toque */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  flex: 1 1 calc(30% - 20px); /* 3 cards por linha */
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .job-list li {
+      flex-basis: calc(50% - 20px); /* 2 cards por linha */
   }
-  a:hover {
-    color: #747bff;
+}
+
+@media (max-width: 600px) {
+  .job-list li {
+      flex-basis: 100%; /* 1 card por linha */
   }
-  button {
-    background-color: #f9f9f9;
+
+  ul {
+      flex-direction: column;
+      gap: 20px; /* Espaçamento maior para itens em coluna */
   }
-} */
+}
+
+/* Estilos do rodapé */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to right, #e6f5f7, #b7d9ff, #85f7ff, #3ea8ff);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

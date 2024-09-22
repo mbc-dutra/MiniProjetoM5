@@ -1,5 +1,5 @@
 export class Job {
-    constructor(id, jobTitle, sendData, limitDate, wage, location, requirements, description) {
+    constructor(id, jobTitle, sendData, limitDate, wage, location, requirements, description, category) {
         this.id = id;
         this.jobTitle = jobTitle;
         this.sendData = sendData;
@@ -8,5 +8,6 @@ export class Job {
         this.location = location;
         this.requirements = requirements;
         this.description = description;
+        this.category = category; // Verifique se a categoria está sendo atribuída
     }
 }

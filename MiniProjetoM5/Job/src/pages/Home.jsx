@@ -1,17 +1,18 @@
-// src/pages/Home/Home.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/header/header'; 
 import Job from '../components/main/job';
 import Footer from '../components/footer/footer';
 
 const Home = () => {
-  return (
-    <div>
-      <Header />
-      <Job />
-      <Footer />
-    </div>
-  );
+    const [filterInput, setFilterInput] = useState("");
+
+    return (
+        <div>
+            <Header setFilterInput={setFilterInput} />
+            <Job filterInput={filterInput} />
+            <Footer />
+        </div>
+    );
 };
 
 export default Home;
