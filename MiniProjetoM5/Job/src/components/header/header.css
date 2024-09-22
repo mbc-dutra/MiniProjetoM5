@@ -1,0 +1,53 @@
+.header {
+  background-color: #f0f5f9; /* Fundo com degradê levemente azulado */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  font-weight: bold;
+  color: #333; /* Cor da fonte preta */
+  text-decoration: none; /* Remove o underline dos links */
+}
+
+a {
+  text-decoration: none; /* Garante que todos os links não tenham underline */
+  color: #333; /* Cor da fonte preta */
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6b00; /* Laranja */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

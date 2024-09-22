@@ -3,10 +3,23 @@ import { createJobs, deleteJob, getAllJobs, getJobById, getJobsByLocation, updat
 
 const JobRouter = Router();
 
+// Atualização para lidar com múltiplos jobs
 JobRouter.post("/jobs", (req, res) => {
-    const { jobTitle, sendData, limitDate, wage, location, requirements, description } = req.body;
-    const newJob = createJobs(jobTitle, sendData, limitDate, wage, location, requirements, description);
-    res.status(200).json({ newJob });
+    const jobs = req.body;
+
+    // Verificar se recebemos um array
+    if (!Array.isArray(jobs)) {
+        return res.status(400).json({ message: 'Expected an array of jobs' });
+    }
+
+    // Processar cada job no array
+    const newJobs = jobs.map(job => {
+        const { jobTitle, sendData, limitDate, wage, location, requirements, description } = job;
+        return createJobs(jobTitle, sendData, limitDate, wage, location, requirements, description);
+    });
+
+    // Retornar os jobs adicionados
+    res.status(200).json({ newJobs });
 });
 
 JobRouter.patch("/jobs", (req, res) => {

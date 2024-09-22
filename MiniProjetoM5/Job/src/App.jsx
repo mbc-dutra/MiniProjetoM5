@@ -1,12 +1,12 @@
 import './App.css'
-import Job from './components/main/job';
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
       <div>
-        <Job />
+        <Home />
       </div>
     </>
   )
