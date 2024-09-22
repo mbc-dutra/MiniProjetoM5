@@ -1,0 +1,212 @@
+[
+    {
+      "jobTitle": "Analista de Dados",
+      "sendData": "2024-02-13",
+      "limitDate": "2024-09-15",
+      "wage": 5500,
+      "location": "São Paulo",
+      "requirements": "Experiência com Power BI ou Tableau, análise de dados e criação de dashboards",
+      "description": "Realização de reports para diretoria",
+      "category": "Análise"
+    },
+    {
+      "jobTitle": "Desenvolvedor Frontend",
+      "sendData": "2024-02-15",
+      "limitDate": "2024-10-20",
+      "wage": 6000,
+      "location": "Rio de Janeiro",
+      "requirements": "Conhecimento em React e JavaScript",
+      "description": "Desenvolvimento de interfaces de usuário",
+      "category": "Desenvolvimento"
+    },
+    {
+      "jobTitle": "Engenheiro de Software",
+      "sendData": "2024-03-01",
+      "limitDate": "2024-11-30",
+      "wage": 12000,
+      "location": "Belo Horizonte",
+      "requirements": "Experiência em Java e Spring",
+      "description": "Desenvolvimento de sistemas backend",
+      "category": "Desenvolvimento"
+    },
+    {
+      "jobTitle": "Analista de Marketing Digital",
+      "sendData": "2024-03-05",
+      "limitDate": "2024-12-01",
+      "wage": 4500,
+      "location": "São Paulo",
+      "requirements": "Conhecimento em SEO e Google Ads",
+      "description": "Gestão de campanhas online",
+      "category": "Marketing"
+    },
+    {
+      "jobTitle": "Designer Gráfico",
+      "sendData": "2024-03-10",
+      "limitDate": "2024-12-15",
+      "wage": 4000,
+      "location": "Curitiba",
+      "requirements": "Experiência com Adobe Creative Suite",
+      "description": "Criação de materiais visuais",
+      "category": "Design"
+    },
+    {
+      "jobTitle": "Gerente de Projetos",
+      "sendData": "2024-04-01",
+      "limitDate": "2025-01-10",
+      "wage": 10000,
+      "location": "Porto Alegre",
+      "requirements": "Experiência em gestão de equipes",
+      "description": "Coordenação de projetos estratégicos",
+      "category": "Gestão"
+    },
+    {
+      "jobTitle": "Especialista em Segurança da Informação",
+      "sendData": "2024-04-15",
+      "limitDate": "2025-02-01",
+      "wage": 9000,
+      "location": "São Paulo",
+      "requirements": "Certificações em segurança cibernética",
+      "description": "Proteção de dados e informações sensíveis",
+      "category": "Segurança"
+    },
+    {
+      "jobTitle": "Analista Financeiro",
+      "sendData": "2024-05-01",
+      "limitDate": "2025-02-28",
+      "wage": 7500,
+      "location": "Belo Horizonte",
+      "requirements": "Experiência em análise de investimentos",
+      "description": "Elaboração de relatórios financeiros",
+      "category": "Finanças"
+    },
+    {
+      "jobTitle": "Cientista de Dados",
+      "sendData": "2024-05-10",
+      "limitDate": "2025-03-15",
+      "wage": 13000,
+      "location": "São Paulo",
+      "requirements": "Conhecimento em Python e Machine Learning",
+      "description": "Análise de grandes volumes de dados",
+      "category": "Análise"
+    },
+    {
+      "jobTitle": "Consultor de TI",
+      "sendData": "2024-05-20",
+      "limitDate": "2025-03-20",
+      "wage": 8000,
+      "location": "Rio de Janeiro",
+      "requirements": "Experiência em implementação de sistemas",
+      "description": "Consultoria em tecnologia da informação",
+      "category": "Consultoria"
+    },
+    {
+      "jobTitle": "Desenvolvedor Backend",
+      "sendData": "2024-06-01",
+      "limitDate": "2025-04-01",
+      "wage": 7000,
+      "location": "São Paulo",
+      "requirements": "Experiência em Node.js e bancos de dados",
+      "description": "Desenvolvimento de APIs",
+      "category": "Desenvolvimento"
+    },
+    {
+      "jobTitle": "Gerente de Vendas",
+      "sendData": "2024-06-10",
+      "limitDate": "2025-04-10",
+      "wage": 9500,
+      "location": "Curitiba",
+      "requirements": "Experiência em gestão de equipe de vendas",
+      "description": "Coordenação da equipe comercial",
+      "category": "Vendas"
+    },
+    {
+      "jobTitle": "Arquiteto de Software",
+      "sendData": "2024-06-15",
+      "limitDate": "2025-04-20",
+      "wage": 11000,
+      "location": "Belo Horizonte",
+      "requirements": "Experiência em design de sistemas",
+      "description": "Arquitetura de soluções de software",
+      "category": "Desenvolvimento"
+    },
+    {
+      "jobTitle": "Coordenador de Recursos Humanos",
+      "sendData": "2024-07-01",
+      "limitDate": "2025-05-01",
+      "wage": 8500,
+      "location": "São Paulo",
+      "requirements": "Experiência em recrutamento e seleção",
+      "description": "Gestão de pessoas e processos",
+      "category": "Recursos Humanos"
+    },
+    {
+      "jobTitle": "Analista de Suporte Técnico",
+      "sendData": "2024-07-10",
+      "limitDate": "2025-05-15",
+      "wage": 4000,
+      "location": "Rio de Janeiro",
+      "requirements": "Conhecimento em atendimento ao cliente",
+      "description": "Suporte a usuários e sistemas",
+      "category": "Suporte"
+    },
+    {
+      "jobTitle": "Especialista em E-commerce",
+      "sendData": "2024-07-20",
+      "limitDate": "2025-05-30",
+      "wage": 5000,
+      "location": "Curitiba",
+      "requirements": "Experiência em plataformas de vendas online",
+      "description": "Gestão de loja virtual",
+      "category": "E-commerce"
+    },
+    {
+      "jobTitle": "Analista de Sistemas",
+      "sendData": "2024-08-01",
+      "limitDate": "2025-06-10",
+      "wage": 6000,
+      "location": "São Paulo",
+      "requirements": "Conhecimento em análise de requisitos",
+      "description": "Desenvolvimento de sistemas e aplicações",
+      "category": "Desenvolvimento"
+    },
+    {
+      "jobTitle": "Gerente de Produto",
+      "sendData": "2024-08-15",
+      "limitDate": "2025-06-20",
+      "wage": 10500,
+      "location": "Belo Horizonte",
+      "requirements": "Experiência em gestão de produtos",
+      "description": "Planejamento e lançamento de produtos",
+      "category": "Gestão"
+    },
+    {
+      "jobTitle": "Engenheiro de Dados",
+      "sendData": "2024-08-20",
+      "limitDate": "2025-06-30",
+      "wage": 9500,
+      "location": "Rio de Janeiro",
+      "requirements": "Conhecimento em ETL e bancos de dados",
+      "description": "Desenvolvimento de pipelines de dados",
+      "category": "Análise"
+    },
+    {
+      "jobTitle": "Especialista em UX/UI",
+      "sendData": "2024-09-01",
+      "limitDate": "2025-07-01",
+      "wage": 7000,
+      "location": "São Paulo",
+      "requirements": "Experiência em design de interfaces",
+      "description": "Criação de experiências de usuário",
+      "category": "Design"
+    },
+    {
+      "jobTitle": "Consultor de Vendas",
+      "sendData": "2024-09-10",
+      "limitDate": "2025-07-10",
+      "wage": 5000,
+      "location": "Curitiba",
+      "requirements": "Habilidade em negociação",
+      "description": "Consultoria em vendas e estratégias",
+      "category": "Vendas"
+    }
+  ]
