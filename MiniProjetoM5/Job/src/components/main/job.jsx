@@ -18,11 +18,10 @@ const Job = ({ filterInput }) => {
         const filters = filterInput.split(",").map(item => item.trim());
         const params = {};
 
-        // A localização deve ser informada antes da categoria
-        if (filters[0]) params.location = filters[0];  // Localização
-        if (filters[1]) params.category = filters[1];  // Categoria (se a localização estiver preenchida)
+        if (filters[0]) params.location = filters[0];
+        if (filters[1]) params.category = filters[1];
 
-        fetchJobs(Object.keys(params).length ? params : undefined); // Chama a função de busca com os filtros, se houver
+        fetchJobs(Object.keys(params).length ? params : undefined);
     }, [filterInput]);
 
     return (

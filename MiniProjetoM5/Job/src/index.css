@@ -1,25 +1,21 @@
-/* Reseta estilos básicos */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Estilo geral do corpo */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden; /* Evita rolagem horizontal */
+  overflow-x: hidden;
 }
 
-/* Container principal */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Estilos do cabeçalho */
 .header {
   background: linear-gradient(to right, #e6f5f7, #b7d9ff, #85f7ff, #3ea8ff);
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
@@ -27,7 +23,6 @@ body {
   text-align: center;
 }
 
-/* Navegação */
 nav {
   display: flex;
   justify-content: space-between;
@@ -42,7 +37,7 @@ nav img {
 ul {
   list-style: none;
   display: flex;
-  gap: 50px; /* Ajustado para telas menores */
+  gap: 50px;
 }
 
 li {
@@ -55,7 +50,6 @@ a {
   color: #333;
 }
 
-/* Estilos da barra de pesquisa */
 .search-bar {
   display: flex;
   gap: 10px;
@@ -76,7 +70,6 @@ button {
   cursor: pointer;
 }
 
-/* Estilos do conteúdo */
 h1 {
   margin: 10px;
   text-align: center;
@@ -96,7 +89,7 @@ h1 {
   padding-right: 10px; 
 }
 
-/* Estilos dos cartões de trabalho */
+
 .job-list {
   display: flex; 
   flex-wrap: wrap; 
@@ -108,32 +101,30 @@ h1 {
 .job-card {
   border: 1px solid #0f0f0f;
   border-radius: 10px;
-  padding: 20px; /* Ajustado para maior área de toque */
+  padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: #fff;
-  flex: 1 1 calc(30% - 20px); /* 3 cards por linha */
+  flex: 1 1 calc(30% - 20px);
 }
 
-/* Responsividade */
 @media (max-width: 900px) {
   .job-list li {
-      flex-basis: calc(50% - 20px); /* 2 cards por linha */
+      flex-basis: calc(50% - 20px);
   }
 }
 
 @media (max-width: 600px) {
   .job-list li {
-      flex-basis: 100%; /* 1 card por linha */
+      flex-basis: 100%;
   }
 
   ul {
       flex-direction: column;
-      gap: 20px; /* Espaçamento maior para itens em coluna */
+      gap: 20px;
   }
 }
 
-/* Estilos do rodapé */
 .footer {
   text-align: center;
   padding: 15px;

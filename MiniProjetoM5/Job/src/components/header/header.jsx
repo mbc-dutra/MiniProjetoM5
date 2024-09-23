@@ -5,7 +5,7 @@ const Header = ({ setFilterInput }) => {
     const handleSearch = (event) => {
         event.preventDefault();
         const input = event.target.elements.filterInput.value;
-        console.log("Filtro de busca:", input); // Adicione isso para verificar
+        console.log("Filtro de busca:", input);
         setFilterInput(input);
     };
 

@@ -5,7 +5,7 @@
 }
 
 .header {
-  background: linear-gradient(to right, #e6f5f7, #b7d9ff, #85f7ff, #3ea8ff); /* Fundo com degradê levemente azulado */
+  background: linear-gradient(to right, #e6f5f7, #b7d9ff, #85f7ff, #3ea8ff);
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
@@ -30,13 +30,13 @@ ul {
 
 li {
   font-weight: bold;
-  color: #333; /* Cor da fonte preta */
-  text-decoration: none; /* Remove o underline dos links */
+  color: #333;
+  text-decoration: none;
 }
 
 a {
-  text-decoration: none; /* Garante que todos os links não tenham underline */
-  color: #333; /* Cor da fonte preta */
+  text-decoration: none;
+  color: #333;
 }
 
 .search-bar {
@@ -52,7 +52,7 @@ input {
 
 button {
   padding: 10px 20px;
-  background-color: #ff6b00; /* Laranja */
+  background-color: #ff6b00;
   color: #fff;
   border: none;
   border-radius: 5px;

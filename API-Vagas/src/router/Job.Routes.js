@@ -3,7 +3,6 @@ import { createJobs, deleteJob, getAllJobs, getJobById, updateJob } from "../con
 
 const JobRouter = Router();
 
-// Rota para lidar com múltiplos jobs
 JobRouter.post("/jobs", (req, res) => {
     const jobs = req.body;
 
@@ -16,10 +15,9 @@ JobRouter.post("/jobs", (req, res) => {
         return createJobs(jobTitle, sendData, limitDate, wage, location, requirements, description, category);
     });
 
-    res.status(201).json({ newJobs }); // Retorna 201 Created
+    res.status(201).json({ newJobs });
 });
 
-// Rota para atualizar um job
 JobRouter.patch("/jobs", (req, res) => {
     const { id, jobTitle, limitDate, category } = req.body;
     const updatedJob = updateJob(id, jobTitle, limitDate, category);
@@ -29,17 +27,14 @@ JobRouter.patch("/jobs", (req, res) => {
     res.status(200).json({ updatedJob });
 });
 
-// Rota para obter todos os jobs ou filtrar por localização e/ou categoria
 JobRouter.get("/jobs", (req, res) => {
-    const { location, category } = req.query; // Captura os parâmetros de consulta
-    let jobList = getAllJobs(); // Obtém a lista de jobs
+    const { location, category } = req.query;
+    let jobList = getAllJobs();
 
-    // Filtra por localização, se fornecido
     if (location) {
         jobList = jobList.filter(job => job.location === location);
     }
 
-    // Filtra por categoria, se fornecido
     if (category) {
         jobList = jobList.filter(job => job.category === category);
     }
@@ -47,7 +42,6 @@ JobRouter.get("/jobs", (req, res) => {
     res.status(200).json({ jobList });
 });
 
-// Rota para obter um job por ID
 JobRouter.get("/jobs/:id", (req, res) => {
     const { id } = req.params;
     const job = getJobById(id);
@@ -57,7 +51,6 @@ JobRouter.get("/jobs/:id", (req, res) => {
     res.status(200).json({ job });
 });
 
-// Rota para deletar um job
 JobRouter.delete("/jobs/:id", (req, res) => {
     const { id } = req.params;
     const deletedJob = deleteJob(id);

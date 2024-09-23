@@ -8,6 +8,6 @@ export class Job {
         this.location = location;
         this.requirements = requirements;
         this.description = description;
-        this.category = category; // Verifique se a categoria está sendo atribuída
+        this.category = category;
     }
 }
